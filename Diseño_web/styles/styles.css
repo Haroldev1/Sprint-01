@@ -1,0 +1,948 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+    grid-template-rows: 0.5rem 1fr 2rem repeat(15, 1fr) 2rem;
+    gap: 0.1rem;
+
+}
+
+/* El div que contiene la barra de categorias */
+.categories_container {
+    display: grid;
+    background-color: rgb(199, 199, 199);
+    grid-row: 2/ span 1;
+    grid-column: 2/span 1;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: 1% 0%;
+    padding: 0;
+}
+
+/* Link que contiene el icono y el texto de la barra de categorias */
+.link_container-categories {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+/* Texto de categorias */
+.text-categories {
+    margin: auto 0.5rem auto 0rem;
+    padding: 0rem;
+    font-family: "Inter", sans-serif;
+    grid-row: span 1;
+    grid-column: 2/ span 1;
+    font-size: 0.8rem;
+}
+
+/* Div que contiene la barra de busqueda */
+.container-seach_bar {
+    display: grid;
+    margin: auto;
+    padding: auto;
+
+    grid-row: 2/span 1;
+    grid-column: 4/span 6;
+    justify-content: center;
+}
+
+/* Input de la barra de busqueda*/
+.seach_bar_input {
+    width: 39rem;
+    height: 2.7rem;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    border-radius: 1rem;
+    padding-left: 1rem;
+
+}
+
+/* Cambiar cuando se selecciona la barra de busqueda */
+input:focus {
+    outline-color: rgb(199, 199, 199);
+    color: black;
+    font-weight: normal;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+/* div contentedor de login */
+.login_container {
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 10/11;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+
+/* Texto INICIAR SESION */
+.login-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-right: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Div que contiene texto y icono de carrito de compras */
+.car_container {
+    display: grid;
+    grid-row: 2/span 1;
+    grid-column: 11/span 1;
+}
+
+/* Link que contiene texto y icono */
+.link-container-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto  "CARRITO" */
+.text-register {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.container-banner {
+    display: grid;
+    grid-row: 4/16;
+    grid-column: 1/13;
+    background-color: #d3d3d3;
+}
+
+.text-banner {
+    grid-row: 8/12;
+    grid-column: 2/6;
+    margin-left: 3rem;
+}
+
+
+.button-text-banner {
+    grid-column: 2/4;
+    grid-row: 11/12;
+    display: flex;
+    justify-content: center;
+    border: 0;
+    border-radius: 1rem;
+    width: 25%;
+    height: 20%;
+    padding: 0;
+    background-color: #999999;
+}
+
+.img-container-banner {
+    grid-column: 8/12;
+    grid-row: 5/15;
+    margin: auto;
+    padding: auto;
+    width: 65%;
+}
+
+.image-banner {
+    width: auto;
+    max-width: 75%;
+    display: flex;
+    align-items: center;
+}
+
+.type-text-categories {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 0.8rem
+}
+
+.categories-container {
+    display: grid;
+    grid-row: 17/19;
+    grid-column: 3/11;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+}
+
+.container-computer {
+    grid-row: 17/19;
+    display: flex;
+    width: 13rem;
+    height: 6.5rem;
+    border-radius: 0.7rem;
+    background-color: #cecece;
+    justify-content: center;
+    align-items: center;
+    margin: auto 1.5rem;
+    padding: auto;
+}
+
+.container-components {
+
+    grid-row: 17/19;
+    display: flex;
+    width: 13rem;
+    height: 6.5rem;
+    border-radius: 0.7rem;
+    background-color: #cecece;
+    justify-content: center;
+    align-items: center;
+    margin: auto 1.5rem;
+    padding: auto;
+}
+
+.container-periferics {
+
+    grid-row: 17/19;
+    display: flex;
+    width: 13rem;
+    height: 6.5rem;
+    border-radius: 0.7rem;
+    background-color: #cecece;
+    justify-content: center;
+    align-items: center;
+    margin: auto 1.5rem;
+    padding: auto;
+}
+
+.container-desktop {
+
+    grid-row: 17/19;
+    display: flex;
+    width: 13rem;
+    height: 6.5rem;
+    border-radius: 0.7rem;
+    background-color: #cecece;
+    justify-content: center;
+    align-items: center;
+    margin: auto 1.5rem;
+    padding: auto;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+    grid-template-rows: 4rem repeat(31, 1fr);
+    gap: 0.1rem;
+}
+
+.container-text-categories-computer {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 1/13;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: auto;
+}
+
+.text-titles-categories {
+    font-family: "Roboto";
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.text-see-all {
+    font-family: "Roboto";
+    font-size: 1rem;
+    color: #6C6C6C;
+}
+
+.container-text-ver-todos-computer {
+    display: grid;
+    grid-row: 2/3;
+    grid-column: 1/13;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-container-text-ver-todos-computer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.circle-ver-todos-computer {
+    display: flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #cecece;
+    border-radius: 100%;
+    border: 0;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    margin-left: 0.6rem;
+}
+
+.container-fila-computers {
+    display: grid;
+    grid-row: 3/10;
+    grid-column: 2/12;
+    margin: auto;
+    padding: auto;
+}
+
+.container-container-fila-computers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-computer-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-1-computer {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-computer-1 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-computer-1 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-computer-1 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-computer-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-2-computer {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-computer-2 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-computer-2 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-computer-2 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-computer-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 3rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-3-computer {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-computer-3 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-computer-3 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-computer-3 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+
+.container-text-categories-desktop {
+    display: grid;
+    grid-row: 10/11;
+    grid-column: 1/13;
+    width: 100%;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: auto;
+}
+
+.container-text-ver-todos-desktop {
+    display: grid;
+    grid-row: 11/12;
+    grid-column: 1/13;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-container-text-ver-todos-desktop {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.circle-ver-todos-desktop {
+    display: flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #cecece;
+    border-radius: 100%;
+    border: 0;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    margin-left: 0.6rem;
+}
+
+.container-fila-desktops {
+    display: grid;
+    grid-row: 12/19;
+    grid-column: 2/12;
+    margin: auto;
+    padding: auto;
+}
+
+.container-container-fila-desktops {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-desktop-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 3rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-1-desktop {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-desktop-1 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-desktop-1 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-desktop-1 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-desktop-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto 3rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-2-desktop {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-desktop-2 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-desktop-2 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-desktop-2 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-desktop-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 3rem;
+    padding: auto 2rem;
+    width: 18rem;
+    height: 22rem;
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-3-desktop {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-desktop-3 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-desktop-3 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-desktop-3 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-text-categories-perifericos {
+    display: grid;
+    grid-row: 19/20;
+    grid-column: 1/13;
+    width: 100%;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1.5rem;
+    padding: auto;
+}
+
+.container-text-ver-todos-perifericos {
+    display: grid;
+    grid-row: 20/21;
+    grid-column: 1/13;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-container-text-ver-todos-perifericos {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.circle-ver-todos-perifericos {
+    display: flex;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: #cecece;
+    border-radius: 100%;
+    border: 0;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+    margin-left: 0.6rem;
+}
+
+.container-fila-periferico {
+    display: grid;
+    grid-row: 21/28;
+    grid-column: 2/12;
+    margin: auto;
+    padding: auto;
+}
+
+.container-container-fila-periferico {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-perifericos-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3rem;
+    padding: auto 2rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-1-periferico {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-periferico-1 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-periferico-1 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-periferico-1 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-perifericos-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto 3rem;
+    padding: auto 2rem;
+    width: 18rem;
+    height: 22rem;
+
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-2-periferico {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-periferico-2 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-periferico-2 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-periferico-2 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-perifericos-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto 3rem;
+    padding: auto 2rem;
+    width: 18rem;
+    height: 22rem;
+    border-radius: 1rem;
+    border: 3px solid #cecece;
+}
+
+.img-3-periferico {
+    width: auto;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    padding: auto;
+}
+
+.text-periferico-3 {
+    padding: auto;
+    margin: 0.3rem 1.9rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+}
+
+.button-add-car-periferico-3 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 11rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.button-favorite-periferico-3 {
+    border: 0;
+    background-color: #dbdbdb;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: auto 0.4rem;
+    border-radius: 0.5rem;
+    padding: auto;
+}
+
+.container-information {
+    display: grid;
+    grid-row: 29/33;
+    grid-column: 3/11;
+    border-top: 2px solid #999999;
+}
+
+.container-container-information {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.information {
+    display: flex;
+    width: 15rem;
+    height: 10rem;
+
+    flex-direction: column;
+}
+
+.information-title {
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 0.4rem;
+    text-shadow: 1px 1px 0.1rem rgb(199, 199, 199), -1px -1px 0.1rem rgb(199, 199, 199);
+}
+
+.information-text {
+    margin: 0.5rem 0;
+    font-family: "Roboto", sans-serif;
+    color: #565656;
+    font-size: 0.9rem;
+}
+
+.contact {
+    width: 15rem;
+    height: 10rem;
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    font-family: "Roboto", sans-serif;
+    color: #565656;
+    font-size: 0.9rem;
+}
+
+.service-asistence {
+    width: 17rem;
+    height: 10rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.button-service-asistence {
+    background-color: #D9D9D9;
+    border: 0;
+    border-radius: 1rem;
+    padding: 0.9rem;
+    width: 10rem;
+    margin-top: 0.8rem;
+}
+
+.service-text {
+    margin: 0.2rem 0;
+    font-family: "Roboto", sans-serif;
+    color: #565656;
+    font-size: 0.9rem;
+}

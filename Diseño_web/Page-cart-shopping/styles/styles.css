@@ -1,0 +1,344 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+    grid-template-rows: 0.5rem 1fr repeat(14, 1fr);
+    gap: 0.1rem;
+
+}
+
+/* El div que contiene la barra de categorias */
+.categories_container {
+    display: grid;
+    background-color: rgb(199, 199, 199);
+    grid-row: 2/ span 1;
+    grid-column: 2/span 1;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: 1% 0%;
+    padding: 0;
+}
+
+/* Link que contiene el icono y el texto de la barra de categorias */
+.link_container-categories {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+/* Texto de categorias */
+.text-categories {
+    margin: auto 0.5rem auto 0rem;
+    padding: 0rem;
+    font-family: "Inter", sans-serif;
+    grid-row: span 1;
+    grid-column: 2/ span 1;
+    font-size: 0.8rem;
+}
+
+/* Div que contiene la barra de busqueda */
+.container-seach_bar {
+    display: grid;
+    margin: auto;
+    padding: auto;
+
+    grid-row: 2/span 1;
+    grid-column: 4/span 6;
+    justify-content: center;
+}
+
+/* Input de la barra de busqueda*/
+.seach_bar_input {
+    width: 39rem;
+    height: 2.7rem;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    border-radius: 1rem;
+    padding-left: 1rem;
+
+}
+
+/* Cambiar cuando se selecciona la barra de busqueda */
+input:focus {
+    outline-color: rgb(199, 199, 199);
+    color: black;
+    font-weight: normal;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+/* div contentedor de login */
+.login_container {
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 10/11;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+
+/* Texto INICIAR SESION */
+.login-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-right: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Div que contiene texto y icono de carrito de compras */
+.car_container {
+    display: grid;
+    grid-row: 2/span 1;
+    grid-column: 11/span 1;
+}
+
+/* Link que contiene texto y icono */
+.link-container-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto  "CARRITO" */
+.text-register {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.container-parte-superior {
+    grid-row: 4/5;
+    grid-column: 2/10;
+    padding: auto;
+}
+
+.container-container-parte-superior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+.title-text-carrito-cant {
+    font-size: 1.5rem;
+    font-family: "Concert one";
+    padding: auto 0;
+    margin: auto 0;
+}
+
+.title-text-delete-favorite {
+    font-family: "Concert one";
+    padding: auto 0;
+    margin: auto 0;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+    margin-right: 1.1rem;
+}
+
+.container-especification-product-1 {
+    grid-row: 5/10;
+    grid-column: 2/8;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #A8A8A8;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+}
+
+.text-description-product-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.image-product {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: auto;
+    margin: auto 0;
+}
+
+.text-name-product {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.text-price-product {
+    font-family: "Concert one";
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #515151;
+}
+
+.button-delet-product {
+    display: flex;
+    background-color: #C3C3C3;
+    margin: 0 auto;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 2.3rem;
+    border-radius: 0.5rem;
+    border: none;
+}
+
+.text-button-delete {
+    font-family: 'Concert one';
+    font-size: 1rem;
+    margin-bottom: 0.1rem;
+    margin-left: 0.1rem;
+}
+
+.price-product-1 {
+    grid-row: 5/10;
+    grid-column: 8/10;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #A8A8A8;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-total-product {
+    font-family: "Concert One";
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+.text-cant-product {
+    font-family: "Concert One";
+    font-size: 1.2rem;
+    margin: 2rem auto 0.5rem;
+}
+
+.box-cant {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+    width: 4.5rem;
+    height: 1.7rem;
+    background-color: #EDEDED;
+    border: 2px solid #868686;
+    border-radius: 0.4rem;
+    padding-bottom: 0.1rem;
+}
+
+.text-inside-button {
+    font-weight: none;
+    font-family: "Concert One";
+}
+
+
+
+
+.container-especification-product-2 {
+    grid-row: 10/15;
+    grid-column: 2/8;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #A8A8A8;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+}
+
+.price-product-2 {
+    grid-row: 10/15;
+    grid-column: 8/10;
+    background-color: #EDEDED;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #A8A8A8;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.price-total-products {
+    grid-row: 5/11;
+    grid-column: 10/12;
+    background-color: #EDEDED;
+    display: flex;
+    margin: 0;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    border: 2px solid #A8A8A8;
+    border-radius: 1rem;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+.container-price {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.container-button-buy {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.button-buy {
+    width: 80%;
+    height: 2.7rem;
+    padding: auto;
+    border: none;
+    border-radius: 0.7rem;
+    background-color: #C7C7C7;
+}
+
+.text-titles-prices-products {
+    font-family: "Concert One";
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+
+.text-prices-products {
+    font-family: "Concert One";
+    font-size: 1.3rem;
+    color: #393939;
+    border-bottom: 1px solid black;
+    margin-bottom: 0.4rem;
+}

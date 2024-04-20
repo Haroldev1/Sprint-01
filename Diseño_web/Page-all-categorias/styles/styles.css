@@ -1,0 +1,172 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+    grid-template-rows: 0.5rem 1fr 1rem repeat(13, 1fr) 2rem;
+    gap: 0.1rem;
+
+}
+
+/* El div que contiene la barra de categorias */
+.categories_container {
+    display: grid;
+    background-color: rgb(199, 199, 199);
+    grid-row: 2/ span 1;
+    grid-column: 2/span 1;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: 1% 0%;
+    padding: 0;
+}
+
+/* Link que contiene el icono y el texto de la barra de categorias */
+.link_container-categories {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+/* Texto de categorias */
+.text-categories {
+    margin: auto 0.5rem auto 0rem;
+    padding: 0rem;
+    font-family: "Inter", sans-serif;
+    grid-row: span 1;
+    grid-column: 2/ span 1;
+    font-size: 0.8rem;
+}
+
+/* Div que contiene la barra de busqueda */
+.container-seach_bar {
+    display: grid;
+    margin: auto;
+    padding: auto;
+    caret-color: blue;
+    grid-row: 2/span 1;
+    grid-column: 4/span 6;
+    justify-content: center;
+}
+
+/* Input de la barra de busqueda*/
+.seach_bar_input {
+    width: 39rem;
+    height: 2.7rem;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    border-radius: 1rem;
+    padding-left: 1rem;
+
+}
+
+/* Cambiar cuando se selecciona la barra de busqueda */
+input:focus {
+    outline-color: rgb(199, 199, 199);
+    color: black;
+    font-weight: normal;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+/* div contentedor de login */
+.login_container {
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 10/11;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+
+/* Texto INICIAR SESION */
+.login-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-right: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Div que contiene texto y icono de carrito de compras */
+.car_container {
+    display: grid;
+    grid-row: 2/span 1;
+    grid-column: 11/span 1;
+}
+
+/* Link que contiene texto y icono */
+.link-container-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto  "CARRITO" */
+.text-register {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.triangulo {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container-all-categorias {
+    grid-row: 4/12;
+    grid-column: 2/4;
+    border: 1px solid #CBC9C9;
+    box-shadow: 0px 2px 12px -2px #E5E5E5;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    min-width: 20rem;
+    max-height: 100%;
+    margin-bottom: 1.2rem;
+}
+
+.container-title {
+    font-family: 'Concert One';
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.3rem 1.5rem;
+}
+
+.container-text-icon {
+    display: flex;
+    align-items: center;
+}
+
+.container-text {
+    font-family: 'Inter';
+    font-size: 0.8rem;
+    margin-left: 0.3rem;
+}

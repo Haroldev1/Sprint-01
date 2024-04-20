@@ -1,0 +1,265 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 5rem repeat(10, 1fr) 5rem;
+    grid-template-rows: 0.5rem 1fr 2rem repeat(9, 1fr);
+    gap: 0.1rem;
+    max-height: 100vh;
+
+}
+
+/* El div que contiene la barra de categorias */
+.categories_container {
+    display: grid;
+    background-color: rgb(199, 199, 199);
+    grid-row: 2/ span 1;
+    grid-column: 2/span 1;
+    border-radius: 0.8rem;
+    text-align: center;
+    margin: 6% 0%;
+    padding: 0;
+}
+
+/* Link que contiene el icono y el texto de la barra de categorias */
+.link_container-categories {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+
+/* Texto de categorias */
+.text-categories {
+    margin: auto 0.5rem auto 0rem;
+    padding: 0rem;
+    font-family: "Inter", sans-serif;
+    grid-row: span 1;
+    grid-column: 2/ span 1;
+    font-size: 0.8rem;
+}
+
+/* Div que contiene la barra de busqueda */
+.container-seach_bar {
+    display: grid;
+    margin: auto;
+    padding: auto;
+    grid-row: 2/span 1;
+    grid-column: 4/span 6;
+    justify-content: center;
+}
+
+/* Input de la barra de busqueda*/
+.seach_bar_input {
+    width: 39rem;
+    height: 2.7rem;
+    border: 1px solid rgb(199, 199, 199);
+    background-color: rgb(199, 199, 199);
+    border-radius: 1rem;
+    padding-left: 1rem;
+    content: 'e8b6';
+}
+
+/* Cambiar cuando se selecciona la barra de busqueda */
+input:focus {
+    outline-color: rgb(199, 199, 199);
+    color: black;
+    font-weight: normal;
+    border-radius: 5px;
+    box-shadow: 0 0 5px grey;
+}
+
+/* div contentedor de login */
+.login_container {
+    display: flex;
+    grid-row: 2/3;
+    grid-column: 10/11;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+
+/* Texto INICIAR SESION */
+.login-text {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0;
+    padding-right: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Div que contiene texto y icono de carrito de compras */
+.car_container {
+    display: grid;
+    grid-row: 2/span 1;
+    grid-column: 11/span 1;
+}
+
+/* Link que contiene texto y icono */
+.link-container-car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Texto  "CARRITO" */
+.text-register {
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.img-description-container {
+    display: grid;
+    grid-row: 4/12;
+    grid-column: 2/span 4;
+    width: 100%;
+}
+
+.img_computer {
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: auto;
+}
+
+.text-especification {
+    display: flex;
+    margin: auto;
+    margin-top: 1rem;
+    padding: center;
+    font-family: "Inter", sans-serif;
+    color: #464646;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.text-price-computer {
+    margin: auto 0rem;
+    font-size: 2rem;
+    font-family: "Concert One", sans-serif;
+    font-size: 2.4rem;
+    color: #515151;
+}
+
+.text-taxes-included {
+    margin: auto 0rem;
+    font-family: "Athiti", sans-serif;
+}
+
+.text_in-stock-cant {
+    margin: auto 0rem;
+    font-size: 1.5rem;
+}
+
+.text-in-stock {
+    font-family: "Share", sans-serif;
+    font-weight: 600;
+}
+
+.stock-cant {
+    font-family: "Share", sans-serif;
+}
+
+.description-computer-container {
+    display: flex;
+    grid-row: 4/10;
+    grid-column: 7/12;
+    border: 4px solid rgb(199, 199, 199);
+    border-radius: 2rem;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.text-components {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 800;
+}
+
+.text-especification-components {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.cant-container {
+    display: grid;
+    grid-row: 10/11;
+    grid-column: 7/10;
+    flex-direction: row;
+    margin-left: 1.4rem;
+    font-size: 1.5rem;
+    font-family: "Share", sans-serif;
+    font-weight: 800;
+}
+
+.cant-container_2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cant-button {
+    display: flex;
+    justify-content: space-around;
+    width: 6em;
+    padding: 0.6rem 1rem;
+    border: 2px solid #959595;
+    border-radius: 0.8rem;
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.buttons-container {
+    display: grid;
+    grid-row: 11/12;
+    grid-column: 7/12;
+
+}
+
+.buttons-container_2 {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.button-add-car {
+    background-color: #D9D9D9;
+    margin: 0.5rem auto;
+    padding: 0.9rem;
+    width: 45%;
+    border-radius: 1rem;
+    border: 0;
+    font-size: 0.8rem;
+}
+
+.button-buy {
+    width: 45%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #92A3FF;
+    margin: 0.5rem auto;
+    padding: 0.9rem;
+    border: 0;
+    font-size: 0.8rem;
+}

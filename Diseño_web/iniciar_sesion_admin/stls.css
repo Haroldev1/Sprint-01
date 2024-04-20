@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: #f0f0f0;
+    display: flex;
+}
+
+.form-container {
+    text-align: center;
+    font-family: cursive, sans-serif;
+}
+
+.image-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* -------------------------------------- */
+body {
+    background-color: #ffffff;
+    font-family: cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.login-container {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    margin: 160px auto;
+    width: 30%;
+    padding: 40px;
+}
+
+.login-container h1 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+
+h3 {
+    color: #545454;
+    font-size: 1rem;
+    margin-top: 0;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+button[type="google"] {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    margin: auto;
+}
+
+button[type="google"]:hover {
+    background-color: #5c4fed;
+    color: white;
+}
+
+.login-container p {
+    text-align: center;
+    color: #2026e4;
+
+
+}
+
+
+input[type="password"]#confirm-password {
+    margin-bottom: 10px;
+}
+
+button[type="submit"] {
+    background-color: #d9d9d9;
+    border: none;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+
+}
+
+
+button[type="submit"]:hover {
+    background-color: #000000;
+    color: white;
+
+}
+
+@media (max-width: 500px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .login-container:not(:last-child) {
+        border-right: none;
+    }
+}
